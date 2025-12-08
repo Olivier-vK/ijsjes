@@ -8,8 +8,15 @@ a:hover
     {text-decoration: underline; color: rgb(27, 228, 255); cursor: crosshair;}
 
 .container
-    {display: grid;}
+    {display: grid; grid-template-columns: 1fr 1fr; gap:5px;}
+.header
+    {background-color: rgb(215, 214, 214); padding: 10px; grid-column-start:1; grid-column-end:3;}
 
+.facts
+    {background-color: rgb(235, 209, 227); padding: 10px;}
+
+.article
+    {padding: 20px; background-color: rgb(240, 240, 240);}
 .header
     {font-weight: bold; font-size: 150%;}
 .header:hover
@@ -17,4 +24,4 @@ a:hover
 h2  {font-weight: bold;}
 
 footer
-    {background-color: rgb(215, 214, 214);}
+    {background-color: rgb(215, 214, 214); grid-column-start:1; grid-column-end:3;}
